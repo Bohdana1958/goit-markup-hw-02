@@ -1,5 +1,5 @@
 :root {
-  --primary-brand-color: #4d5ae5;
+  --iris: #4d5ae5;
   --ocean: #404bbf;
   --navy-blue: #2e2f42;
   --success-color: #31d0aa;
@@ -47,19 +47,57 @@ h2 {
 .list {
   list-style: none;
 }
-.link {
+.logo {
+  color: var(--iris, #4d5ae5);
   font-family: 'Raleway', sans-serif;
   font-size: 18px;
+  font-style: normal;
   font-weight: 800;
-  line-height: 1.17; /* 116.667% */
+  line-height: 1, 17; /* 116.667% */
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.link {
+  font-family: Raleway;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 21px; /* 116.667% */
   letter-spacing: 0.54px;
   text-transform: uppercase;
   text-decoration: none;
-  color: var(--iris, #4d5ae5);
 }
 .studio {
-  color: #2e2f42;
+  color: var(--navy-blue, #2e2f42);
 }
+.menu {
+  color: var(--navy-blue, #2e2f42);
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5; /* 150% */
+  letter-spacing: 0.02em;
+}
+.link-menu {
+  color: var(--navy-blue, #2e2f42);
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5; /* 150% */
+  letter-spacing: 0.02em;
+}
+
+.list .menu .link-menu:hover,
+.list .menu .link-menu:focus {
+  color: var(--ocean, #404bbf);
+
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.32px;
+}
+
 .link-menu {
   font-family: var(--title-font);
   font-size: 16px;
@@ -86,7 +124,9 @@ h2 {
   line-height: 1.5; /* 150% */
   letter-spacing: 0.32px;
 }
-
+.address {
+  font-style: normal;
+}
 .link-address {
   font-family: var(--title-font);
   font-size: 16px;
@@ -102,7 +142,7 @@ h2 {
   | Hero
   |============================
 */
-.hero {
+.list-hero {
   background-color: var(--navy-blue, #2e2f42);
 }
 .hero-title {
@@ -118,15 +158,14 @@ h2 {
   font-family: var(--title-font);
   font-size: 16px;
   font-weight: 500;
-  background: var(--iris, #4d5ae5);
+  background-color: var(--iris, #4d5ae5);
   color: var(--white, #fff);
   line-height: 1.5; /* 150% */
   letter-spacing: 0.64px;
   cursor: pointer;
 }
-
-.hero .hero-btn :hover {
-  background: #404bbf;
+.list-hero .hero-btn :hover {
+  background-color: #404bbf;
 }
 /**
   |============================
@@ -160,8 +199,11 @@ h2 {
   | Team
   |============================
 */
-.team {
+.list-team {
   background-color: #f4f4fd;
+}
+.team-item {
+  background-color: #ffffff;
 }
 .team-item-title {
   font-family: var(--title-font);
@@ -174,7 +216,6 @@ h2 {
   letter-spacing: 0.4px;
 }
 .team-item-text {
-  font-family: var(--title-font);
   font-size: 16px;
   line-height: 1.5; /* 150% */
   color: var(--slate, #434455);
@@ -191,35 +232,39 @@ h2 {
 .filters-btn {
   border: 1px solid var(--cornflower, #e7e9fc);
   cursor: pointer;
-}
-.filters-btn-text {
   color: var(--iris, #4d5ae5);
   background: var(--cloud, #f4f4fd);
   text-align: center;
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5; /* 150% */
-  letter-spacing: 0.64px;
+  letter-spacing: 0.04em;
 }
-
+.list .filters-btn:hover,
+.list .filters-btn:focus {
+  background-color: #404bbf;
+}
 /**
   |============================
-  | .option {
-}
-.option-list {
-}
-.option-item {
-}
-.option-item-img {
-}
-.option-title {
-}
-.option-text {
-}
+  | Option 
   |============================
 */
 
+.option-title {
+  color: var(--navy-blue, #2e2f42);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.2; /* 120% */
+  letter-spacing: 0.02em;
+}
+.option-text {
+  color: var(--slate);
+  font-size: 16px;
+  line-height: 1.5; /* 150% */
+  letter-spacing: 0.02em;
+}
 /**
   |============================
   | Footer
