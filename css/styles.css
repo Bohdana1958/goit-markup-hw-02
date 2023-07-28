@@ -38,7 +38,8 @@ ul {
 .list {
   list-style: none;
 }
-.logo {
+
+.link {
   color: var(--iris, #4d5ae5);
   font-family: 'Raleway', sans-serif;
   font-size: 18px;
@@ -47,18 +48,17 @@ ul {
   line-height: 1, 17; /* 116.667% */
   letter-spacing: 0.03em;
   text-transform: uppercase;
-}
-.link {
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 800;
-  line-height: 21px; /* 116.667% */
-  letter-spacing: 0.54px;
-  text-transform: uppercase;
   text-decoration: none;
 }
 .studio {
   color: var(--navy-blue, #2e2f42);
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 1, 17; /* 116.667% */
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 .menu {
   color: var(--navy-blue, #2e2f42);
@@ -277,7 +277,7 @@ ul {
   | Footer
   |============================
 */
-.logos {
+.list-footer {
   background: var(--navy-blue, #2e2f42);
 }
 .logos-studios {
