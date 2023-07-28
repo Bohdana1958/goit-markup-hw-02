@@ -11,8 +11,8 @@
   --hero-background-color: #2e2f42;
   --white-background-color: #ffffff;
   --modal-background-color: #fcfcfc;
-  --primary-font: 'Raleway';
-  --title-font: 'Roboto';
+  --primary-font: 'Raleway', sans-serif;
+  --title-font: 'Roboto', sans-serif;
   --slate: #434455;
 }
 body {
@@ -24,7 +24,7 @@ body {
   line-height: 1.5;
   letter-spacing: 2%;
   color: #434455;
-  background-color: #fcfcfc;
+  background-color: var(--white-background-color);
 }
 ul {
   list-style-type: none;
@@ -35,7 +35,7 @@ h2 {
   font-family: var(--title-font);
   font-size: 36px;
   font-weight: 700;
-  line-height: 1.1; /* 111.111% */
+  line-height: 1.11; /* 111.111% */
   letter-spacing: 0.72px;
   text-transform: capitalize;
 }
@@ -44,11 +44,14 @@ h2 {
   | Header
   |============================
 */
-.logo {
-  font-family: var(--primary-font);
+.list {
+  list-style: none;
+}
+.link {
+  font-family: 'Raleway', sans-serif;
   font-size: 18px;
   font-weight: 800;
-  line-height: 1.16; /* 116.667% */
+  line-height: 1.17; /* 116.667% */
   letter-spacing: 0.54px;
   text-transform: uppercase;
   text-decoration: none;
@@ -123,7 +126,7 @@ h2 {
 }
 
 .hero .hero-btn :hover {
-  background: var(--ocean, #404bbf);
+  background: #404bbf;
 }
 /**
   |============================
@@ -135,7 +138,7 @@ h2 {
   font-family: var(--title-font);
   font-size: 20px;
   font-weight: 500;
-  line-height: 1.5; /* 120% */
+  line-height: 1.2; /* 120% */
   color: var(--navy-blue, #2e2f42);
   letter-spacing: 0.4px;
 }
@@ -157,13 +160,16 @@ h2 {
   | Team
   |============================
 */
-
+.team {
+  background-color: #f4f4fd;
+}
 .team-item-title {
   font-family: var(--title-font);
   font-size: 20px;
   font-weight: 500;
-  line-height: 1.5; /* 120% */
+  line-height: 1.2; /* 120% */
   color: var(--navy-blue, #2e2f42);
+  background-color: #ffffff;
   text-align: center;
   letter-spacing: 0.4px;
 }
@@ -183,7 +189,6 @@ h2 {
 */
 
 .filters-btn {
-  border-radius: 4px;
   border: 1px solid var(--cornflower, #e7e9fc);
   cursor: pointer;
 }
@@ -225,11 +230,11 @@ h2 {
 }
 .logos-studios {
   color: var(--cloud, #f4f4fd);
-  font-family: var(--primary-font);
+  font-family: 'Raleway', sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 800;
-  line-height: 1, 16; /* 116.667% */
+  line-height: 1, 17; /* 116.667% */
   letter-spacing: 0.54px;
   text-transform: uppercase;
 }
