@@ -262,7 +262,7 @@ ul {
   background: var(--navy-blue, #2e2f42);
 }
 .logos-studios {
-  color: var(--cloud, #f4f4fd);
+  color: #f4f4fd;
   font-family: 'Raleway', sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -272,7 +272,7 @@ ul {
   text-transform: uppercase;
 }
 .logos-text {
-  color: var(--cloud, #f4f4fd);
+  color: #f4f4fd;
   font-family: var(--title-font);
   font-size: 16px;
   line-height: 1.5; /* 150% */
