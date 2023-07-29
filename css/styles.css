@@ -132,16 +132,13 @@ ul {
   background-color: var(--iris, #4d5ae5);
   color: var(--white, #fff);
   line-height: 1.5; /* 150% */
-  letter-spacing: 0.64px;
+  letter-spacing: 0.04em;
   cursor: pointer;
 }
-.list-hero .hero-btn :hover {
-  background-color: #404bbf;
+.hero-btn:hover,
+.hero-btn:focus {
+  background: var(--ocean, #404bbf);
 }
-.list-hero .hero-btn :focus {
-  background-color: #404bbf;
-}
-
 /**
   |============================
   | Advantages
@@ -226,14 +223,12 @@ ul {
   line-height: 1.5; /* 150% */
   letter-spacing: 0.04em;
 }
-.list .filters-btn:hover,
-.list .filters-btn:focus {
+.filters-btn:hover,
+.filters-btn:focus {
   background-color: #404bbf;
-}
-.filters-btn-text:hover,
-.filters-btn-text:focus {
   color: #ffffff;
 }
+
 /**
   |============================
   | Option 
