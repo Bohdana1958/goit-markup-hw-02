@@ -230,6 +230,10 @@ ul {
 .list .filters-btn:focus {
   background-color: #404bbf;
 }
+.filters-btn-text:hover,
+.filters-btn-text:focus {
+  color: #ffffff;
+}
 /**
   |============================
   | Option 
