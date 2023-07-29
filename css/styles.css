@@ -35,11 +35,8 @@ ul {
   | Header
   |============================
 */
-.list {
-  list-style: none;
-}
 
-.link {
+.logo {
   color: var(--iris, #4d5ae5);
   font-family: 'Raleway', sans-serif;
   font-size: 18px;
@@ -48,6 +45,9 @@ ul {
   line-height: 1.17; /* 116.667% */
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  text-decoration: none;
+}
+.link {
   text-decoration: none;
 }
 .studio {
@@ -60,13 +60,14 @@ ul {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
-.menu {
+.list {
   color: var(--navy-blue, #2e2f42);
   font-family: Roboto;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5; /* 150% */
   letter-spacing: 0.02em;
+  list-style: none;
 }
 .link-menu {
   color: var(--navy-blue, #2e2f42);
@@ -155,10 +156,10 @@ ul {
   cursor: pointer;
 }
 .list-hero .hero-btn :hover {
-  background-color: var(--ocean);
+  background-color: #404bbf;
 }
 .list-hero .hero-btn :focus {
-  background-color: var(--ocean);
+  background-color: #404bbf;
 }
 
 /**
